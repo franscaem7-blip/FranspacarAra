@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niaraaaa - Love Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="page active">
+        <div class="container">
+            <div class="cat-container">
+                <img src="cat_hallo.png" alt="Kucing" class="cat-img">
+            </div>
+
+            <h1 class="greeting">Halooo!!!!</h1>
+            <h2 class="title">Niaraaaa</h2>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Nama Pacar Frans(Panggilan)</label>
+                    <input type="text" id="username" placeholder="Masukkan nama kamu..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••" required>
+                </div>
+
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+
+            <p class="forgot-password"><a href="#" onclick="handleForgotPassword(event)">Lupa Password?</a></p>
+        </div>
+    </div>
+
+    <!-- Message Page -->
+    <div id="messagePage" class="page">
+        <div class="container">
+            <h1 class="message-greeting">Hehe....</h1>
+            <h2 class="message-title">Dibaca ya!!!!</h2>
+
+            <div class="cat-small">
+                <img src="cat_sad.png" alt="Kucing sedih" class="cat-img-small">
+            </div>
+
+            <div class="message-box">
+                <p id="messageText">Alooo Cantikku Cintaku dunia ku cantiknyaa frans....<br>
+                    Frans minta maaf yaa klw akhir" ini kita lebih sering berantem dan bertengkar.<br>
+                    maaf juga kadang sifat angkuh serta omongan frans bikin kamu sedih dan merasa sendirian... maaf yaa
+                    kadang dengan ego dan keras kepala selalu berbenturan akan masalah yang datang, frans minta maaf
+                    yang sebesar-besarnya, frans menyesali kesalahan-kesalahan yang Frans lakukan....<br>
+                    maaf selalu bikin kamu sedihh bahkan sampai nangis
+                    :(<br><br>
+                    Ara mauuu tidaakk kitaa balikan????</p>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-yes" onclick="handleYes()">Maauu</button>
+                <button class="btn-no" onclick="handleNo()">Moal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Response Page -->
+    <div id="responsePage" class="page">
+        <div class="container">
+            <h1 class="response-title">Makaciii cintakuuu</h1>
+
+            <div class="cat-happy">
+                <img src="cat_happy.png" alt="Kucing bahagia" class="cat-img-small">
+            </div>
+
+            <h2 class="response-subtitle">Ada yang Mau Sampaikan?</h2>
+
+            <textarea id="responseText" class="response-textarea" placeholder="Ketik yang mau disampaikan....."
+                required></textarea>
+
+            <button class="btn-send" onclick="sendResponse()">Kirim</button>
+
+            <p class="response-note">Makacii SS aja kirim ke wa, nomornya masih sama kok cantik....</p>
+        </div>
+    </div>
+
+    <!-- Success Page -->
+    <div id="successPage" class="page">
+        <div class="container">
+            <div class="success-animation">
+                <h1 class="success-title">Terimakasih 💕</h1>
+                <p class="success-message">Pesan kamu sudah masuk nih!</p>
+                <p class="success-detail" id="successDetail"></p>
+                <button class="btn-back" onclick="backToLogin()">Kembali</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
